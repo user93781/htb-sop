@@ -6,3 +6,6 @@
 
 ## Situational Awareness
 - Examine recently edited files with `.viminfo`.
+
+## Evasion
+- `/dev/shm`

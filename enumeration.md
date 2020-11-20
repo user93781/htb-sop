@@ -26,8 +26,11 @@ sleep 300; nmap -p- -oA nmap/<prefix>-all <ip>
 
 ## SMB (File shares)
 ```bash
-smbclient -L <ip>
+# lists all shares on host
+smbclient -L <hostname>
 ```
+
+- Submitting an empty password is equivalent to guest authentication.
 
 ---
 
@@ -77,3 +80,10 @@ $ msfconsole
 
 ### Web directory scanning
 - `gobuster dir -u <url> -w <wordlist>`
+- `dirb <url> -r -o <output file>`
+  - `r`: disable recursive search
+
+### Certificates
+- View the SSL certificate
+  - `Issuer` field
+  - `Subject` field
